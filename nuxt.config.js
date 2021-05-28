@@ -7,7 +7,7 @@ export default {
     titleTemplate: '%s - company-site',
     title: 'company site',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },
