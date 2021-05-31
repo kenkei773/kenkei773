@@ -20,7 +20,6 @@
       OpenType100 Standard
     </pre>
 
-    {{ this.$route.params }}
 
   </v-container>
 </template>
