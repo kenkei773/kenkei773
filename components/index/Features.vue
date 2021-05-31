@@ -64,11 +64,6 @@ export default {
         },
       ]
     }
-  },
-  methods: {
-    link() {
-      this.$router.push({path: this.feature.link})
-    }
   }
 }
 </script>
