@@ -4,19 +4,21 @@
     <v-app-bar-nav-icon
       clipped
       @click="drawer = true"
-      class="d-flex d-sm-none"></v-app-bar-nav-icon>
-      
-    <v-avatar class="mr-3" color="grey lighten-3" size="40">
-      <v-img contain max-height="70%" src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png">
-      </v-img>
-    </v-avatar>
-    <v-toolbar-title class="font-weight-black title">
-      大盛印刷
-    </v-toolbar-title>
+      class="d-flex d-sm-none"></v-app-bar-nav-icon
+    >
+      <v-avatar class="mr-3" color="grey lighten-3" size="40">
+        <v-img contain max-height="70%" src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png">
+        </v-img>
+      </v-avatar>
+      <nuxt-link  v-scroll-to="'#hero'" to tag="div" class="link">
+      <v-toolbar-title class="font-weight-black title">
+        大盛印刷
+      </v-toolbar-title>
+      </nuxt-link>
 
     <v-spacer></v-spacer>
 
-    <nav class="hidden-sm-and-down">
+    <nav class="d-none d-sm-flex">
       <ul>
         <li>
           <nuxt-link v-scroll-to="'#about-me'" to tag="div" class="link">About Me</nuxt-link>
