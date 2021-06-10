@@ -4,8 +4,8 @@
     <v-app-bar-nav-icon
       clipped
       @click="drawer = true"
-      class="d-flex d-sm-none"></v-app-bar-nav-icon
-    >
+      class="d-flex d-sm-none"
+    />
       <v-avatar class="mr-3" color="grey lighten-3" size="40">
         <v-img contain max-height="70%" src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png">
         </v-img>
@@ -42,13 +42,15 @@
     </nav>
   </v-app-bar>
 
-  <v-navigation-drawer
-    v-model="drawer"
-    fixed
-    temporary
-    right
-    width="150"
->
+      <v-navigation-drawer
+        v-model="drawer"
+        fixed
+        temporary
+        right
+        width="150"
+        src="https://source.unsplash.com/P8VMwYFY-Es"
+        height="300"
+      >
   <v-list
     nav
     dense
