@@ -21,6 +21,9 @@
     <nav class="d-none d-sm-flex">
       <ul>
         <li>
+          <nuxt-link to="/" tag="div" class="link">Top</nuxt-link>
+        </li>
+        <li>
           <nuxt-link v-scroll-to="'#about-me'" to tag="div" class="link">About Me</nuxt-link>
         </li>
         <li>

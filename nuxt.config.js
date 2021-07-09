@@ -2,10 +2,11 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   target: 'static',
+  ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - company-site',
-    title: 'company site',
+    titleTemplate: '%s ',
+    title: 'taisei-demo',
     htmlAttrs: {
       lang: 'ja'
     },
@@ -16,7 +17,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    base: {
+      href: 'router.base'
+     }
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -77,5 +81,13 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     
-  }
+  },
+
+  generate: {
+    subFolders: false
+  },
+
+  router: {
+    base: '/data/'
+  },
 }
